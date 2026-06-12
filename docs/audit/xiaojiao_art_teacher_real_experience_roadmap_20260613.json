@@ -1,0 +1,126 @@
+{
+  "record_id": "XIAOJIAO_ART_TEACHER_REAL_EXPERIENCE_ROADMAP_20260613",
+  "decision": "ACCEPT_AS_RUNTIME_EXPERIENCE_ROUTE_REFERENCE",
+  "created_on": "2026-06-13",
+  "current_position": {
+    "1006": "minimum_runtime_foundation_reached_teacher_review_gate",
+    "1007A_H": "art_teacher_business_pack_vertical_slice_dry_run_accepted",
+    "1007I": "static_productized_preview_accepted_with_sha_record_sync_fix"
+  },
+  "core_judgement": "Do not continue horizontal platform abstraction. Move toward one art teacher daily work vertical slice that can be clicked, then generated, then continuously tried by the owner.",
+  "experience_levels": [
+    {
+      "level": "A",
+      "name": "open_and_view_static_or_clickthrough_experience",
+      "estimate": "1-2_days",
+      "scope": [
+        "local page",
+        "today entry",
+        "lesson focus",
+        "handout candidate patch preview",
+        "teacher review stop"
+      ],
+      "real_model": false,
+      "real_database": false
+    },
+    {
+      "level": "B",
+      "name": "operable_state_change_experience",
+      "estimate": "3-5_days",
+      "scope": [
+        "JSON/localStorage/in_memory_work_state",
+        "confirm draft updates state",
+        "defer updates queue",
+        "suggestion changes",
+        "candidate enters review queue"
+      ],
+      "real_model": false,
+      "real_database": false
+    },
+    {
+      "level": "C",
+      "name": "real_candidate_generation_experience",
+      "estimate": "7-10_days",
+      "scope": [
+        "provider sandbox",
+        "handout candidate generation",
+        "lesson section revision candidate",
+        "candidate result to work_object_patch",
+        "teacher review before apply"
+      ],
+      "real_model": "sandbox_only",
+      "real_database": false
+    },
+    {
+      "level": "D",
+      "name": "owner_continuous_minimum_usable_version",
+      "estimate": "2-3_weeks",
+      "scope": [
+        "today work",
+        "lesson focus",
+        "lesson draft",
+        "handout candidate",
+        "rubric candidate",
+        "light process recording",
+        "teacher review",
+        "work record",
+        "local persistence"
+      ],
+      "real_model": "limited",
+      "real_database": "local_or_lightweight_only"
+    },
+    {
+      "level": "E",
+      "name": "small_teacher_trial_readiness",
+      "estimate": "4-8_weeks",
+      "scope": [
+        "stability",
+        "privacy",
+        "teacher onboarding",
+        "limited real teacher workflow",
+        "support and feedback loop"
+      ],
+      "real_model": "controlled",
+      "real_database": "controlled"
+    }
+  ],
+  "recommended_route": [
+    {
+      "stage": "1007J_ART_TEACHER_PRODUCT_EXPERIENCE_REVIEW_AND_LIGHT_RECORDING_PLANNING",
+      "goal": "review product feel and plan light process recording before runtime work"
+    },
+    {
+      "stage": "1007K_ART_TEACHER_LOCAL_CLICKABLE_RUNTIME_PREVIEW",
+      "goal": "make the 1007I chain locally clickable with state changes, still no real provider/database/frontend runtime apply"
+    },
+    {
+      "stage": "1008A_PROVIDER_SANDBOX_PLANNING",
+      "goal": "decide provider sandbox boundaries and model strategy"
+    },
+    {
+      "stage": "1008B_HANDOUT_AND_SECTION_REVISION_PROVIDER_SANDBOX",
+      "goal": "generate real candidate content in sandbox and turn it into work_object_patch"
+    },
+    {
+      "stage": "1009A_MINIMAL_RESOURCE_CONTEXT_INTEGRATION",
+      "goal": "bring minimal resource context into candidate generation"
+    },
+    {
+      "stage": "1010A_OWNER_TRIAL_MINIMUM_USABLE_VERSION",
+      "goal": "support the owner in continuous use for one real art teacher scenario"
+    }
+  ],
+  "hold_lines": [
+    "classroom_teaching_studio",
+    "public_display_surface",
+    "teacher_control_surface",
+    "student_side_runtime",
+    "student_evaluation_analysis_board",
+    "full_resource_library",
+    "grid_studio_complex_workspace",
+    "school_admin_backend"
+  ],
+  "next_stage": "1007J_ART_TEACHER_PRODUCT_EXPERIENCE_REVIEW_AND_LIGHT_RECORDING_PLANNING",
+  "runtime_preview_target": "1007K_ART_TEACHER_LOCAL_CLICKABLE_RUNTIME_PREVIEW",
+  "boundary_note": "1007K may be locally clickable and stateful, but should still avoid provider/model, real database, memory, Feishu, formal export, production frontend runtime modification, and formal business apply unless explicitly authorized."
+}
